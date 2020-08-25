@@ -1,0 +1,694 @@
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("co.jpg");
+    min-height: 100%;
+}
+.w3-bar .w3-button {
+    padding: 26px;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.fa-facebook-official{
+  background-image: url("C:\Users\ankur\Downloads\facebook-sketched-logo-variant.png");
+}
+
+
+<!--h1 leateers for heading-->
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+
+body {
+  background: hsla(0, 0%, 0%, .9); 
+}
+
+
+#cs{
+  transform: translate(625px,130px);
+}
+h11{
+  color: rgba(48, 47, 47, 0.904);
+  font: normal 140px Varela Round, sans-serif;
+  height: 140px;
+  left: 0;
+  letter-spacing: 5px;
+  margin: -80px 0 0 0;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  top: 50%;
+  width: 100%;
+  animation: move linear 2000ms infinite;  
+}
+
+@keyframes move {
+  0% {
+    text-shadow:
+      4px -4px 0 hsla(0, 100%, 50%, 1), 
+      3px -3px 0 hsla(0, 100%, 50%, 1), 
+      2px -2px 0 hsla(0, 100%, 50%, 1), 
+      1px -1px 0 hsla(0, 100%, 50%, 1),
+      -4px 4px 0 hsla(180, 100%, 50%, 1), 
+      -3px 3px 0 hsla(180, 100%, 50%, 1), 
+      -2px 2px 0 hsla(180, 100%, 50%, 1), 
+      -1px 1px 0 hsla(180, 100%, 50%, 1)
+    ;
+  }
+  25% {    
+    text-shadow:      
+      -4px -4px 0 hsla(180, 100%, 50%, 1), 
+      -3px -3px 0 hsla(180, 100%, 50%, 1), 
+      -2px -2px 0 hsla(180, 100%, 50%, 1), 
+      -1px -1px 0 hsla(180, 100%, 50%, 1),
+      4px 4px 0 hsla(0, 100%, 50%, 1), 
+      3px 3px 0 hsla(0, 100%, 50%, 1), 
+      2px 2px 0 hsla(0, 100%, 50%, 1), 
+      1px 1px 0 hsla(0, 100%, 50%, 1)      
+    ;
+  }
+  50% {
+    text-shadow:
+      -4px 4px 0 hsla(0, 100%, 50%, 1), 
+      -3px 3px 0 hsla(0, 100%, 50%, 1), 
+      -2px 2px 0 hsla(0, 100%, 50%, 1), 
+      -1px 1px 0 hsla(0, 100%, 50%, 1),
+      4px -4px 0 hsla(180, 100%, 50%, 1), 
+      3px -3px 0 hsla(180, 100%, 50%, 1), 
+      2px -2px 0 hsla(180, 100%, 50%, 1), 
+      1px -1px 0 hsla(180, 100%, 50%, 1)
+    ;
+  }
+  75% {
+    text-shadow:
+      4px 4px 0 hsla(180, 100%, 50%, 1), 
+      3px 3px 0 hsla(180, 100%, 50%, 1), 
+      2px 2px 0 hsla(180, 100%, 50%, 1), 
+      1px 1px 0 hsla(180, 100%, 50%, 1),
+      -4px -4px 0 hsla(0, 100%, 50%, 1), 
+      -3px -3px 0 hsla(0, 100%, 50%, 1), 
+      -2px -2px 0 hsla(0, 100%, 50%, 1), 
+      -1px -1px 0 hsla(0, 100%, 50%, 1)      
+    ;
+  }
+  100% {
+    text-shadow:
+      4px -4px 0 hsla(0, 100%, 50%, 1), 
+      3px -3px 0 hsla(0, 100%, 50%, 1), 
+      2px -2px 0 hsla(0, 100%, 50%, 1), 
+      1px -1px 0 hsla(0, 100%, 50%, 1),
+      -4px 4px 0 hsla(180, 100%, 50%, 1), 
+      -3px 3px 0 hsla(180, 100%, 50%, 1), 
+      -2px 2px 0 hsla(180, 100%, 50%, 1), 
+      -1px 1px 0 hsla(180, 100%, 50%, 1)
+    ;
+  }  
+}
+.container{
+  height: 5px;
+  width: 50px;
+}
+
+<!-- GALLERY-->
+/*
+
+All grid code is placed in a 'supports' rule (feature query) at the bottom of the CSS (Line 77). 
+        
+The 'supports' rule will only run if your browser supports CSS grid.
+
+Flexbox is used as a fallback so that browsers which don't support grid will still recieve an identical layout.
+
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:500);
+
+:root {
+	/* Base font size */
+	font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	background-color: #fafafa;
+}
+
+.container {
+	max-width: 100rem;
+	margin: 0 auto;
+	padding: 0 2rem 2rem;
+}
+
+.heading {
+	font-family: "Montserrat", Arial, sans-serif;
+	font-size: 4rem;
+	font-weight: 500;
+	line-height: 1.5;
+	text-align: center;
+	padding: 3.5rem 0;
+	color: #1a1a1a;
+}
+
+.heading span {
+	display: block;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	/* Compensate for excess margin on outer gallery flex items */
+	margin: -1rem -1rem;
+}
+
+.gallery-item {
+	/* Minimum width of 24rem and grow to fit available space */
+	flex: 1 0 24rem;
+	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+	margin: 1rem;
+	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+	overflow: hidden;
+}
+
+.gallery-image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 400ms ease-out;
+}
+
+.gallery-image:hover {
+	transform: scale(1.15);
+}
+
+/*
+
+The following rule will only run if your browser supports CSS grid.
+
+Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
+
+*/
+
+@supports (display: grid) {
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+		grid-gap: 2rem;
+	}
+
+	.gallery,
+	.gallery-item {
+		margin: 0;
+	}
+}
+
+
+
+
+.ty{
+transform:translate(370px);
+}
+
+.tu{
+transform:translate(374px);
+}
+
+
+.sizee{
+
+width:350px;
+
+
+}
+
+
+
+
+
+.s1{
+width:500px;
+height:220px;
+}
+
+
+.s2{
+border-radius:20px;
+}
+
+
+section{
+		float: left;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		width: 100%;
+		padding-left:0;
+		padding-right:0;
+}
+
+#icon-wrapper{
+	width:100%;
+	float:left;
+	height:250px;
+}
+
+.icons {
+	width:25%;
+	float:left;
+	position:relative;
+}
+.icons2 {
+	width:25%;
+	float:left;
+	position:relative;
+	margin-left:25%;
+}
+.icons3 {
+	width:25%;
+	float:left;
+	position:relative;
+	margin-left:50%;
+}
+.icons4 {
+	width:25%;
+	float:left;
+	position:relative;
+	margin-left:75%;
+}
+
+.icon-slide-container{
+	height:300px;
+	overflow:hidden;
+	text-align: left;
+	position: absolute;
+	float: left;
+	width: 300px;
+	left: 50%;
+	margin-left: -150px;
+}
+
+.slide-icon{
+  width:300px;
+  height:auto;
+  position:absolute;
+  margin-top:-300px;
+  -webkit-transition:.4s ease;
+  -moz-transition:.4s ease;
+  -ms-transition:.4s ease;
+  -o-transition:.4s ease;
+  transition:.4 ease;
+}
+	
+.slide-icon:hover{
+  position:absolute;
+  margin-top:0;
+}
+
+@media only screen and (max-width: 1300px) {
+  #icon-wrapper{
+		width:100%;
+		float:left;
+		height:170px;
+	}
+  .icon-slide-container {
+		height: 200px;
+		overflow: hidden;
+		text-align: left;
+		position: absolute;
+		float: left;
+		width: 200px;
+		left: 50%;
+		margin-left: -100px;
+	}
+  .slide-icon {
+		width: 200px;
+		height: auto;
+		position: absolute;
+		margin-top: -200px;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+  #home-social-container{
+		margin-right: 0;
+		margin-left: 0;
+		width: 100%;
+		padding: 0;
+		float: left;
+		left: 0;
+	}
+}
+
+@media only screen and (max-width: 840px) {
+  #icon-wrapper{
+		width:100%;
+		float:left;
+		height:650px;
+	}
+	
+	.icon-slide-container {
+		height: 300px;
+		overflow: hidden;
+		text-align: left;
+		position: absolute;
+		float: left;
+		width: 300px;
+		left: 50%;
+		margin-left: -150px;
+	}
+	
+	.slide-icon {
+		width: 300px;
+		height: auto;
+		position: absolute;
+		margin-top: -300px;
+	}	
+	.icons {
+		width: 50%;
+		float: left;
+		position: relative;
+	}
+	.icons2 {
+		width: 50%;
+		float: left;
+		position: relative;
+		margin-left: 50%;
+	}
+	.icons3 {
+		width: 50%;
+		float: left;
+		position: relative;
+		margin-left: 0%;
+		margin-top: 350px;
+	}
+	.icons4 {
+		width: 50%;
+		float: left;
+		position: relative;
+		margin-left: 50%;
+	}
+}
+                        
+@media only screen and (max-width: 650px) {
+	#icon-wrapper {
+		height: 400px;
+	}
+	#section{
+		width: 90%;
+		padding-left:5%;
+		padding-right:5%;
+	}
+	.slide-icon {
+		width: 200px;
+		height: auto;
+		position: absolute;
+		margin-top: -200px;
+	}
+	.icon-slide-container {
+		height: 200px;
+		width: 200px;
+		left: 50%;
+		margin-left: -100px;
+	}
+	.icons3 {
+		width: 50%;
+		position: relative;
+		margin-left: 0%;
+		margin-top: 230px;
+	}
+}
+                                  
+@media only screen and (max-width: 570px) {
+	#icon-wrapper {
+		height: 300px;
+	}
+	.slide-icon {
+		width: 150px;
+		height: auto;
+		position: absolute;
+		margin-top: -150px;
+	}
+	.icon-slide-container {
+		height: 150px;
+		width: 150px;
+		left: 50%;
+		margin-left: -75px;
+	}
+	.icons3 {
+		width: 50%;
+		float: left;
+		margin-left: 0%;
+		margin-top: 190px;
+	}	
+}
+
+
+
+
+<!--responsive-->
+.container1 {
+  width: 960px;
+
+  margin: 50px auto;
+  padding: 5px;
+  padding-left: 20px;
+  psdding-right: 0;
+}
+
+.box {
+  width: 24%;
+  height: 400px;
+  margin: 0.2%;
+  padding: 15px;
+  box-sizing: border-box;
+  display: inline-block;
+  background: rgb(19, 194, 224);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgba(0,0,0,0.4);
+  cursor: pointer;
+}
+.box .icon-cont {
+  border: 6px solid rgba(255,255,255,0.3);
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  margin: 20px auto;
+  display: block; 
+  text-align: center;
+  
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  
+  box-shadow: 0 0 0 0px rgba(255,255,255,0.5), 0 0 0 0px rgba(3, 108, 129, 0.5);
+}
+.box .icon-cont i {
+  color: #fff;
+  opacity: 0.6;
+  font-size: 2.5em;
+  line-height: 75px;
+}
+.box:hover .icon-cont {
+  animation: shady 4s linear infinite;
+}
+
+@keyframes shady {
+  0% {box-shadow: 0 0 0 0px rgba(255,255,255,0.5), 0 0 0 0px rgba(3, 108, 129, 0.5);}
+  20% {box-shadow: 0 0 0 100px rgba(255,255,255,0), 0 0 0 0px rgba(3, 108, 129, 0);}
+  20.1% {box-shadow: 0 0 0 0px rgba(255,255,255,0.5), 0 0 0 0px rgba(3, 108, 129, 0.5);}
+  50% {box-shadow: 0 0 0 0px rgba(255,255,255,0.5), 0 0 0 0px rgba(3, 108, 129, 0.5);}
+  70% {box-shadow: 0 0 0 100px rgba(255,255,255,0), 0 0 0 0px rgba(3, 108, 129, 0);}
+  70.1% {box-shadow: 0 0 0 0px rgba(255,255,255,0.5), 0 0 0 0px rgba(3, 108, 129, 0.5);}
+  100% {box-shadow: 0 0 0 0px rgba(255,255,255,0.5), 0 0 0 0px rgba(3, 108, 129, 0.5);}
+}
+
+.box h3 {
+  color: #fff;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 15px;
+  border-bottom: 1px solid rgba(255,255,255,0);
+  
+  position: absolute;
+  top: 125px;
+  width: 70%;
+  left: 10%;
+  z-index: 4;
+}
+.box ul {
+  font-family: 'Open Sans', Arial, sans-serif;
+  color: #fff;
+  font-size: 13px;
+  line-height: 28px;
+  text-indent: 14px;
+  margin: 25px;
+  margin-top: 380px;
+  list-style-type: disc;
+}
+.box ul.hidden {
+  opacity: 0;
+}
+.box a.expand {
+  width: 35px;
+  height: 35px;
+  background: #fff;
+  font-weight: 600;
+  color: #036C81;
+  display: block;
+  margin: 15px auto 25px;
+  text-align: center;
+  line-height: 35px;
+  cursor: pointer;
+  
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  
+}
+.box a.expand span.minus {
+  opacity: 0;
+}
+.box a.expand span.plus {
+  opacity: 1;
+  padding-left: 5px;
+}
+.box.selected a.expand {
+  display: block;
+  position: absolute;
+  left: 180px;
+  right: -29px;
+  bottom: -39px;
+  width: 80px;
+  height: 50px;
+  background: #eee;
+  color: #036C81;
+  transform: rotate(-45deg);
+}
+.box.selected a.expand span {
+  display: block;
+  position: absolute;
+  top: -4px;
+  left: 38px;
+  transform: rotate(45deg);
+  font-size: 24px;
+}
+.box.selected a.expand span.minus {
+  opacity: 1;
+}
+.box.selected a.expand span.plus {
+  opacity: 0;
+}
+.box.selected .icon-cont {
+  transform: scale(1.5,1.5);
+  opacity: 0.3;
+  position: absolute;
+  top: -20px;
+  left: -5px;
+  right: 180px;
+}
+.box.selected:hover .icon-cont {
+  animation: none;
+}
+.box.selected h3 {
+  padding: 32px 15px 15px 15px;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  
+  width: 70%;
+  top: 16px;
+  left: 10%;
+}
+.box.selected ul.hidden {
+  opacity: 1;
+  margin-top: 95px;
+}
+
+
+.he1{
+height:10px;
+}
+
+
+
+.contai {
+  position: relative;
+  width: 20%;
+  float:left;
+  padding:10px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overl {
+
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 98%;
+  height:0;
+  transition: .5s ease;
+  OPACITY:0.5;
+  border-radius:20px;
+}
+
+.contai:hover .overl {
+  bottom: 0;
+  height: 100%;
+  
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity:1;
+}
+
+.pa1{
+	transform:translate(75px,0);
+	
+}
+
+.pa2{
+	transform:translate(125px,0);
+	
+}
+
+.pa3{
+	transform:translate(175px,0);
+	
+}
+
+.pa4{
+	transform:translate(225px,0);
+	
+}
